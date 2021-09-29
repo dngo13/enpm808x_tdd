@@ -3,16 +3,32 @@
 [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
 
+## Authors
+```
+Part 1: 
+* Navigator: Diane Ngo (dngo13)
+* Driver: Ameya Konkar (akonkar)
+@version 1.0
+```
+
+```
+Part 2: 
+* Navigator: Aditi Ramadwar
+* Driver: Yash Kulkarni
+@version 1.0
+```
 ## Overview
 
-Simple starter C++ project with:
+A Test-Driven Development assignment C++ project for a PID controller with:
 
 - cmake
 - googletest
+- Travis CI
+- Coveralls
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/dngo13/enpm808x_tdd
 cd <path to repository>
 mkdir build
 cd build
