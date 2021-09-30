@@ -6,6 +6,13 @@
 
 ## Overview
 
+A practice of Test Driven Development through pair programming was carried out using a simple implementation of a PID controller
+
+Pair B for the Test Driven Development
+
+Authors: 
+Part 1 - Driver: Aditi Ramadwar, Navigator: Yash Kulkarni
+
 Simple starter C++ project with:
 
 - cmake
