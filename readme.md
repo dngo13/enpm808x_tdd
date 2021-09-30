@@ -8,7 +8,7 @@ https://app.travis-ci.com/dngo13/enpm808x_tdd.svg?branch=master
 ```
 Part 1: 
 * Navigator: Diane Ngo (dngo13)
-* Driver: Ameya Konkar (akonkar)
+* Driver: Ameya Konkar (ameyakonk)
 @version 1.0
 ```
 
