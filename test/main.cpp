@@ -1,3 +1,6 @@
+/* Copyright Gtest_Main [2021] Version 1.0
+ * */
+
 #include <gtest/gtest.h>
 
 int main(int argc, char** argv) {

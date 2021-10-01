@@ -1,5 +1,30 @@
-#include <gtest/gtest.h>
+/* Copyright PID_test [2021] Version 1.0 
+ */
 
-TEST(dummy, should_pass) {
-  EXPECT_EQ(1, 1);
+
+#include <gtest/gtest.h>
+#include "pid.hpp"
+#include "pid.cpp"
+
+/*
+ * @test case pid
+ *
+ * @brief asserts if funtion value is true
+ */
+
+TEST(pid, should_assert_true) {
+  PID p(10, 10, 10);
+  EXPECT_EQ(1.1, p.compute(2, 3));
 }
+
+/*
+ * @test case pid
+ *
+ * @brief asserts if compute function returns 
+*/
+
+TEST(pid_function, should_assert_double_velocity) {
+  PID p(5.2, 1.1, 1.1);
+  ASSERT_DOUBLE_EQ(1.1, p.compute(2, 3));
+}
+
