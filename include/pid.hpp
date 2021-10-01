@@ -1,6 +1,6 @@
 /* Copyright PID_Class [2021] Version 1.0 
  */
-#indef PID_HPP
+#ifndef PID_HPP
 #define PID_HPP
 /**
  * @file pid.hpp
