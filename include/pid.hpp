@@ -1,6 +1,7 @@
 /* Copyright PID_Class [2021] Version 1.0 
  */
-
+#indef PID_HPP
+#define PID_HPP
 /**
  * @file pid.hpp
  * @author Diane Ngo (dngo13)
@@ -46,3 +47,5 @@ public:
 	 */
 	double compute(double tar_setpnt, double act_vel);
 };
+
+#endif PID_HPP
