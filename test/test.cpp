@@ -14,7 +14,7 @@ PID p(1, 1, 1);
 
 TEST(pid, should_compute_velocity) {
   
-  EXPECT_EQ(3.0, p.compute(3 2));
+  EXPECT_EQ(3.0, p.compute(3, 2));
 }
 
 /*
