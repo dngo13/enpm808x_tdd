@@ -1,7 +1,5 @@
-/* Copyright Main [2021] Version 1.0 
- */
-
 /*
+ * Copyright Main [2021] Version 1.0 
  * @file main.cpp
  * @author Diane Ngo (dngo13)
  *
