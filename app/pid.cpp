@@ -20,8 +20,8 @@ using std::endl;
  */
 PID::PID() {}
 
-PID::PID(double kp, double ki, double kd) {
-  setGains(kp, ki, kd);
+PID::PID(double kp, double ki, double kd, double ts) {
+  setGains(kp, ki, kd, ts);
 }
 
 PID::~PID() {}
@@ -29,10 +29,11 @@ PID::~PID() {}
 /*
  * @brief Function to set the gains for PID controller
  */
-void PID::setGains(double kp, double ki, double kd) {
+void PID::setGains(double kp, double ki, double kd, double ts) {
     kp_ = kp;
     ki_ = ki;
     kd_ = kd;
+    ts_ = ts;
 }
 
 /*
