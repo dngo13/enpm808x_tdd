@@ -1,8 +1,7 @@
-/* Copyright PID_Class [2021] Version 1.0 
- */
 #ifndef PID_HPP
 #define PID_HPP
 /**
+ * Copyright PID_Class [2021] Version 1.0 
  * @file pid.hpp
  * @author Diane Ngo (dngo13)
  *
