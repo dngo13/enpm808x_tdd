@@ -1,5 +1,6 @@
-# C++ Boilerplate
-[![Build Status](https://app.travis-ci.com/aditiramadwar/PID_Controller.svg?branch=master)](https://app.travis-ci.com/aditiramadwar/PID_Controller)
+# PID Controller
+
+[![Build Status](https://travis-ci.com/aditiramadwar/PID_Controller.svg?branch=master)](https://travis-ci.com/github/aditiramadwar/PID_Controller)
 [![Coverage Status](https://coveralls.io/repos/github/aditiramadwar/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/aditiramadwar/PID_Controller?branch=master)
 ---
 
@@ -16,6 +17,26 @@ Simple starter C++ project with:
 
 - cmake
 - googletest
+
+## Things to be done in part 2
+```
+1. Run test cases:
+cd <path to repository>
+mkdir build
+cd build
+cmake ..
+make
+Run tests: ./test/cpp-test
+In this command, one test will fail and one test will pass. Try to resolve the test case that's failing.
+
+2. Modify the stub method "computeVelocity" in include/pid_lib.hpp such that we get the value of new_velocity and
+ the test case 1 passes
+
+3. Modify the app/main.cpp file to comply with the activity diagram.
+
+4. Check if all test cases are passing.
+
+```
 
 ## Standard install via command-line
 ```
