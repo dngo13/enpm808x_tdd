@@ -18,6 +18,16 @@ Simple starter C++ project with:
 - cmake
 - googletest
 
+## Things done in Part 1
+```
+1. Designed UML and activity diagram
+
+2. Declared class and stub method in include/pid_lib.hpp
+
+3. Created and verified test cases in test/test.cpp
+
+4. Verified commenting and style guidelines.
+```
 ## Things to be done in part 2
 ```
 1. Run test cases:
@@ -34,7 +44,9 @@ In this command, one test will fail and one test will pass. Try to resolve the t
 
 3. Modify the app/main.cpp file to comply with the activity diagram.
 
-4. Check if all test cases are passing.
+4. Make sure all test cases are passing.
+
+5. Check code coverage, if test cases are passing then code coverage will pass.
 
 ```
 
