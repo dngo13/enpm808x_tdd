@@ -1,6 +1,6 @@
 # We need a decent ubuntu dist
-sudo: false
-dist: trusty
+sudo: required
+dist: xenial
 
 # Modern cpp settings from
 #  http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/
@@ -23,7 +23,7 @@ matrix:
       env: COMPILER=g++-5
 
 before_install:
-  - pip3 install --user cpp-coveralls
+  - pip install --user cpp-coveralls
 install:
   - sudo apt-get install -y -qq lcov
 script:
