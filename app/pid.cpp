@@ -1,7 +1,5 @@
-/* Copyright pid_cpp [2021] Version 1.0 
- */
-
 /*
+ * Copyright pid_cpp [2021] Version 1.0
  * @file pid.cpp
  * @author Diane Ngo (dngo13)
  *
