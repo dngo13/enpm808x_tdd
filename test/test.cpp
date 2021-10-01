@@ -12,7 +12,7 @@
  * @brief asserts if funtion value is true
  */
 
-TEST(pid, should_assert_true) {
+TEST(pid, should_compute_velocity) {
   PID p(10, 10, 10);
   EXPECT_EQ(1.1, p.compute(2, 3));
 }
