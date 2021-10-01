@@ -9,8 +9,9 @@
 /*
  * @test case pid
  *
- * @brief asserts if compute funtion value 
- *         is correct.
+ * @brief checks if compute funtion returns 
+ *        correct value 
+ *         
  */
 
 TEST(pid, should_compute_velocity) {
