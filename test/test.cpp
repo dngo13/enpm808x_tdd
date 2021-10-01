@@ -10,7 +10,7 @@
  *        correct value 
  *         
  */
-PID p(1, 1, 1);
+PID p(1.0, 1.0, 1.0, 1.0);
 
 TEST(pid, should_compute_velocity) {
   
