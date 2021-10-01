@@ -9,7 +9,8 @@
 /*
  * @test case pid
  *
- * @brief asserts if funtion value is true
+ * @brief asserts if compute funtion value 
+ *         is correct.
  */
 
 TEST(pid, should_compute_velocity) {
@@ -21,6 +22,7 @@ TEST(pid, should_compute_velocity) {
  * @test case pid
  *
  * @brief asserts if compute function returns 
+ *        double velocity.
 */
 
 TEST(pid_function, should_assert_double_velocity) {
