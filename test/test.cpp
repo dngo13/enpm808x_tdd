@@ -10,11 +10,11 @@
  *        correct value 
  *         
  */
-PID p(10, 10, 10);
+PID p(1, 1, 1);
 
 TEST(pid, should_compute_velocity) {
   
-  EXPECT_EQ(1.1, p.compute(2, 3));
+  EXPECT_EQ(3.0, p.compute(3 2));
 }
 
 /*
@@ -26,6 +26,6 @@ TEST(pid, should_compute_velocity) {
 
 TEST(pid_function, should_assert_double_velocity) {
  
-  ASSERT_DOUBLE_EQ(1.1, p.compute(2, 3));
+  ASSERT_DOUBLE_EQ(3.0, p.compute(3, 2));
 }
 
