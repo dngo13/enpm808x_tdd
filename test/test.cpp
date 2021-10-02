@@ -14,7 +14,7 @@
 /// Header files ///
 #include <gtest/gtest.h>
 #include "pid.hpp"
-#include "pid.cpp"
+
 
 ///  Setting parameters for PID ///
 PID p(1.0, 1.0, 1.0, 1.0);
