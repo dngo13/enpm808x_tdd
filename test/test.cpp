@@ -41,3 +41,6 @@ TEST(pid_function, should_assert_double_velocity) {
   ASSERT_DOUBLE_EQ(3.0, p.compute(3, 2));
 }
 
+TEST(setGains,should_pass){
+  ASSERT_EQ(0,p.setGains(1.0,1.0,1.0,1.0));
+}

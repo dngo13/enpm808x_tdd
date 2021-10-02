@@ -61,7 +61,7 @@ class PID {
   /**
    * @brief Set the gains for the PID controller
    */
-  void setGains(double kp, double ki, double kd, double ts);
+  int setGains(double kp, double ki, double kd, double ts);
 
   /**
    * @brief Calulate new velocity given a setpoint and actual velocity

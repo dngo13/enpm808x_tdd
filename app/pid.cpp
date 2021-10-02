@@ -34,11 +34,12 @@ PID::~PID() {}
  * @brief Function to set the gains for PID controller
  */
 
-void PID::setGains(double kp, double ki, double kd, double ts) {
+int PID::setGains(double kp, double ki, double kd, double ts) {
     kp_ = kp;
     ki_ = ki;
     kd_ = kd;
     ts_ = ts;
+    return 0;
 }
 
    /**
@@ -58,11 +59,9 @@ double PID::compute(double tar_setpnt, double act_vel) {
       * Loop to find the absolute value of the current error
       */
 
-     if (tar_setpnt < act_vel) {
-       current_error = act_vel - tar_setpnt;
-     } else {
-       current_error = tar_setpnt - act_vel;
-     }
+     
+     current_error = tar_setpnt - act_vel;
+     
      /// Calculation of proportional component ///
      double proportional = kp_ * current_error;
      /// Calculation of Integral component ///
