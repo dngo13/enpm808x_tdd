@@ -4,8 +4,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/Ykulkarni-ops/enpm808x_tdd/badge.svg?branch=master)](https://coveralls.io/github/Ykulkarni-ops/enpm808x_tdd?branch=master)
 =======
 
->>>>>>> 4cb93d6608732e141280db390db13209cdf45994
----
 
 ## Authors
 ```
