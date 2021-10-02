@@ -28,7 +28,7 @@ PID::PID(double kp, double ki, double kd, double ts) {
   setGains(kp, ki, kd, ts);
 }
 
-PID::~PID() {}
+
 
 /**
  * @brief Function to set the gains for PID controller
@@ -73,3 +73,6 @@ double PID::compute(double tar_setpnt, double act_vel) {
      /// Returns the value of velocity ///
      return new_vel;
   }
+
+PID::~PID {}
+
