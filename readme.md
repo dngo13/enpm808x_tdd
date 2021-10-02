@@ -1,9 +1,14 @@
 # enpm808x_tdd
+<<<<<<< HEAD
+[![Build Status](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd.svg?branch=master)](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd)
+[![Coverage Status](https://coveralls.io/repos/github/dngo13/enpm808x_tdd/badge.svg?branch=master)](https://coveralls.io/github/dngo13/enpm808x_tdd?branch=master)
+=======
 
 [![Build Status](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd.svg?branch=master)](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd)
 [![Coverage Status](https://coveralls.io/repos/github/Ykulkarni-ops/enpm808x_tdd/badge.svg?branch=master)](https://coveralls.io/github/Ykulkarni-ops/enpm808x_tdd?branch=master)
 =======
 
+>>>>>>> 4cb93d6608732e141280db390db13209cdf45994
 ---
 
 ## Authors
@@ -143,3 +148,4 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 - Git
 
     It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
+
