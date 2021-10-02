@@ -1,7 +1,5 @@
 # enpm808x_tdd
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
-[![Build Status](https://app.travis-ci.com/dngo13/enpm808x_tdd.svg?branch=master)](https://app.travis-ci.com/dngo13/enpm808x_tdd)
+[![Build Status](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd.svg?branch=master)](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd)
 [![Coverage Status](https://coveralls.io/repos/github/dngo13/enpm808x_tdd/badge.svg?branch=master)](https://coveralls.io/github/dngo13/enpm808x_tdd?branch=master)
 ---
 
@@ -142,3 +140,4 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 - Git
 
     It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
+
