@@ -21,8 +21,8 @@ using std::endl;
 
 /**
  * @brief Constructor and Destructor
- */
-PID::PID() {}
+ */-
+
 
 PID::PID(double kp, double ki, double kd, double ts) {
   setGains(kp, ki, kd, ts);
@@ -74,6 +74,5 @@ double PID::compute(double tar_setpnt, double act_vel) {
      return new_vel;
   }
 
-PID::~PID() {}
 
 

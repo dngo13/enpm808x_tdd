@@ -23,9 +23,7 @@ using std::endl;
 
 int main() {
     /// Object pid created using PID class ///
-    PID pid;
-    /// Method setGains called for pid object ///
-    pid.setGains(1.0, 1.0, 1.0, 1.0);
+    PID pid(1.0, 1.0, 1.0, 1.0);
     /// Calculation of new_vel for given set point and actual velocity ///
     double new_vel = pid.compute(0.9, 1.5);
     /// print new velocity ///
