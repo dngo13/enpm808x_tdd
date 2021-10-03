@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.com/aditiramadwar/PID_Controller.svg?branch=master)](https://travis-ci.com/github/aditiramadwar/PID_Controller)
 [![Coverage Status](https://coveralls.io/repos/github/aditiramadwar/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/aditiramadwar/PID_Controller?branch=master)
+
+[![Build Status](https://app.travis-ci.com/ameyakonk/ENPM_808X.svg?branch=master)](https://app.travis-ci.com/ameyakonk/ENPM_808X)
+[![Coverage Status](https://coveralls.io/repos/github/ameyakonk/ENPM_808X/badge.svg?branch=master)](https://coveralls.io/github/ameyakonk/ENPM_808X?branch=master)
 ---
 
 ## Overview
@@ -11,7 +14,10 @@ A practice of Test Driven Development through pair programming was carried out u
 Pair B for the Test Driven Development
 
 Authors: 
+
 Part 1 - Driver: Aditi Ramadwar, Navigator: Yash Kulkarni
+
+Part 2 - Driver: Ameya Konkar, Navigator: Diane Ngo
 
 Simple starter C++ project with:
 
