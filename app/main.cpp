@@ -9,5 +9,10 @@ int main() {
      * 
      * Call the compute method and print the new velocity value
      * */
+    ControllerPID p(1 ,1, 1);
+    double sp = 0, cv = 0;
+    cout << "Enter Setpoint and Current velocity";
+    cin >> sp >> cv;
+    p.computeVelocity(sp, cv);
     return 0;
 }
