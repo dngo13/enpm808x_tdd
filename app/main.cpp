@@ -7,10 +7,12 @@ using std :: cin;
 using std :: endl;
 
 int main() {
-    double PID[3] = {0};
+    double pid_var[3] = {0};                  
     cout << "Enter PID values" << endl;
-    cin >> PID[0] >> PID[1] >> PID[2];
-    ControllerPID p(PID[0] ,PID[1], PID[2]);
+    cin >> pid_var[0];                   // Enter kp value 
+    cin >> pid_var[1];                   // Enter ki value
+    cin >> pid_var[2];                   // Enter kd value
+    ControllerPID p(pid_var[0] ,pid_var[1], pid_var[2]); 
     double sp = 0, cv = 0;
     cout << "Enter Setpoint and Current velocity";
     cin >> sp >> cv;
