@@ -1,4 +1,17 @@
 // Copyright (C) 2021 by Aditi Ramadwar
+/**
+* @file    pid.cpp
+* @author  Part 1 : Aditi Ramadwar (Driver) , Yash Kulkarni (Navigator)
+* @date    10/03/2021
+* @version 1.0
+*
+* @brief   PID methods descriptions
+*
+* @section DESCRIPTION
+*
+* This is a file that contains all the methods for ControllerPID class
+*/
+
 #include "pid_lib.hpp"
 
 /** 
