@@ -34,7 +34,7 @@
 double ControllerPID::computeVelocity(double set_point,
     double current_velocity) {
     // By default this stub method is returning 2.0.
-    return new_velocity 2.0;
+    return 2.0;
 }
 
 /** 
