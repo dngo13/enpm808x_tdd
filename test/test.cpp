@@ -36,7 +36,7 @@
 TEST(ControllerPID, get_pid_output1) {
     // Creating object pid of class ControllerPID
     ControllerPID pid(1.2, 0.4, 0.2);
-    EXPECT_EQ(6.4, pid.computeVelocity(8.0, 4.0));
+    EXPECT_EQ(7.2, pid.computeVelocity(8.0, 4.0));
 }
 /**
  * @brief: Tests the compute method of the class by returning a double value,
@@ -49,7 +49,7 @@ TEST(ControllerPID, get_pid_output1) {
 TEST(ControllerPID, get_pid_output2) {
     // Creating object pid of class ControllerPID
     ControllerPID pid(1.2, 0.4, 0.2);
-    EXPECT_EQ(3.2, pid.computeVelocity(5.0, 3.0));
+    EXPECT_EQ(3.6, pid.computeVelocity(5.0, 3.0));
 }
 
 /**

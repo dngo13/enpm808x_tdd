@@ -37,6 +37,7 @@ Simple starter C++ project with:
 - Private variables need to be added in the UML.
 - Structure of the code was verified.
 - Code coverage was discussed.
+- New test case was created.
 ## Things to be done in part 2
 ```
 1. Run test cases:

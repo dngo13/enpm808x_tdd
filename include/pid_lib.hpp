@@ -36,7 +36,7 @@ class ControllerPID {
         // Initialize K_p, K_i, k_d
         k_p = k_p_;
         k_i = k_i_;
-        k_d_ = k_d_;
+        k_d = k_d_;
         sampling_time = 1.0;
         cur_error = 0;
         prev_error = 0;
