@@ -28,13 +28,13 @@ A Test-Driven Development assignment C++ project for a PID controller with:
 - Travis CI
 - Coveralls
 
-## Readme.md updates
+## To do instructions
 
--The implementation of the part 2 has been completed and the unit test cases have been verified successfully. 
--Extra test case was added to ensure the code coverage.
--C++ Google style guide is verified through cpplint and cppcheck. 
--Doxygen style has been followed for commenting. 
--Unit test cases and code coverage has been verified using Travis-ci and Coveralls.io
+- The implementation of the part 2 has been completed and the unit test cases have been verified successfully. 
+- Extra test case was added to ensure the code coverage.
+- C++ Google style guide is verified through cpplint and cppcheck. 
+- Doxygen style has been followed for commenting. 
+- Unit test cases and code coverage has been verified using Travis-ci and Coveralls.io
 
 
 ## Standard install via command-line
