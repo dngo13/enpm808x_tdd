@@ -67,6 +67,11 @@ class PID {
   double tar_setpnt = 0.0; /* Target setpoint */
   double act_vel = 0.0; /* Actual velocity */
   double new_vel = 0.0; /* New velocity */
+  double integral_error = 0.0; /* Integral error */
+  double proportional = 0.0; /* proportional component */
+  double integral = 0.0; /* integral component */
+  double derivative = 0.0; /* derivative component */
+  double current_error = 0.0; /* current error */
 };
 
 #endif  /// PID_HPP ///

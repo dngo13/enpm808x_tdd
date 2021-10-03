@@ -54,13 +54,14 @@ double PID::compute(double tar_setpnt, double act_vel) {
      cout << " and actual velocity: " << act_vel << endl;
      /// declaration of variable current error ///
      /// Calculate the current error ///
-     double current_error = tar_setpnt - act_vel;
+     current_error = tar_setpnt - act_vel;
      /// Calculation of proportional component ///
-     double proportional = kp_ * current_error;
+     proportional = kp_ * current_error;
      /// Calculation of Integral component ///
-     double integral = ki_ * (current_error * ts_);
+     integral_error = (current_error) * ts_;
+     integral = ki_ * integral_error;
      /// Calculation of Derivative component ///
-     double derivative = kd_ * (current_error /ts_);
+     derivative = kd_ * (current_error /ts_);
      /// Calculation of New velocity ///
      new_vel = proportional + integral + derivative;
      /// Returns the value of velocity ///
