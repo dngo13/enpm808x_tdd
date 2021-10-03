@@ -25,22 +25,27 @@
 #include <gtest/gtest.h>
 #include "pid_lib.hpp"
 
-// Creating object pid of class ControllerPID
-ControllerPID pid;
-
 /**
  * @brief: Tests the compute method of the class by returning a double value,
  * should pass after correct changes in the computeVelocity method.
  * set_point = 8.0, current_velocity = 4.0, 
- * k_p, k_i, k_d, sampling_time = [1.2, 0.4, 0.2, 1]
+ * [k_p, k_i, k_d, sampling_time] = [1.2, 0.4, 0.2, 1]
  * expected return value = 7.2
  *
  * */
-TEST(ComputeTest1, should_pass) {ASSERT_EQ(7.2, pid.computeVelocity(8.0, 4.0));}
+TEST(ControllerPID, get_pid_output) {
+// Creating object pid of class ControllerPID
+ControllerPID pid(1.2, 0.4, 0.2);
+    EXPECT_EQ(6.4, pid.computeVelocity(8.0, 4.0));
+}
 
 /**
  * @brief: Tests the correct initialization of sampling_time
  * should pass
  * expected return value = 1.0
  */
-TEST(ComputeTest2, should_pass) {ASSERT_EQ(1.0, pid.returnSamplingTime());}
+TEST(ControllerPID, get_sampling_time) {
+// Creating object pid of class ControllerPID
+ControllerPID pid(1.2, 0.2, 0.4);
+    EXPECT_EQ(1.0, pid.returnSamplingTime());
+}
