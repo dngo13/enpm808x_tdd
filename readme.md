@@ -1,4 +1,4 @@
-# ENPM_808X
+# PID Controller
 
 [![Build Status](https://travis-ci.com/aditiramadwar/PID_Controller.svg?branch=master)](https://travis-ci.com/github/aditiramadwar/PID_Controller)
 [![Coverage Status](https://coveralls.io/repos/github/aditiramadwar/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/aditiramadwar/PID_Controller?branch=master)
