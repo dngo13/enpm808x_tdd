@@ -37,20 +37,11 @@ using std::endl;
  */
 
 class PID {
- private:
-  double kp_ = 0.0; /* Proportional gain */
-  double ki_ = 0.0; /* Integral gain */
-  double kd_ = 0.0; /* Derivative gain */
-  double ts_ = 0.0; /* Sampling time */
-  double tar_setpnt = 0.0; /* Target setpoint */
-  double act_vel = 0.0; /* Actual velocity */
-  double new_vel = 0.0; /* New velocity */
-
  public:
   /**
    * @brief PID Constructor
    */
-  PID();
+
   PID(double kp, double ki, double kd, double ts);
 
   /**
@@ -67,6 +58,15 @@ class PID {
    * @brief Calulate new velocity given a setpoint and actual velocity
    */
   double compute(double tar_setpnt, double act_vel);
+
+ private:
+  double kp_ = 0.0; /* Proportional gain */
+  double ki_ = 0.0; /* Integral gain */
+  double kd_ = 0.0; /* Derivative gain */
+  double ts_ = 0.0; /* Sampling time */
+  double tar_setpnt = 0.0; /* Target setpoint */
+  double act_vel = 0.0; /* Actual velocity */
+  double new_vel = 0.0; /* New velocity */
 };
 
 #endif  /// PID_HPP ///
