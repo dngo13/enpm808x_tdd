@@ -34,8 +34,8 @@
  *
  * */
 TEST(ControllerPID, get_pid_output) {
-// Creating object pid of class ControllerPID
-ControllerPID pid(1.2, 0.4, 0.2);
+    // Creating object pid of class ControllerPID
+    ControllerPID pid(1.2, 0.4, 0.2);
     EXPECT_EQ(6.4, pid.computeVelocity(8.0, 4.0));
 }
 
@@ -45,7 +45,7 @@ ControllerPID pid(1.2, 0.4, 0.2);
  * expected return value = 1.0
  */
 TEST(ControllerPID, get_sampling_time) {
-// Creating object pid of class ControllerPID
-ControllerPID pid(1.2, 0.2, 0.4);
+    // Creating object pid of class ControllerPID
+    ControllerPID pid(1.2, 0.2, 0.4);
     EXPECT_EQ(1.0, pid.returnSamplingTime());
 }
