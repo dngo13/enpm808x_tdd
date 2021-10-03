@@ -52,4 +52,3 @@ double ControllerPID::computeVelocity(double set_point,
 double ControllerPID::returnSamplingTime(void) {
     return sampling_time;
 }
-
