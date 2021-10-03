@@ -1,9 +1,9 @@
 # enpm808x_tdd
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
-[![Build Status](https://app.travis-ci.com/dngo13/enpm808x_tdd.svg?branch=master)](https://app.travis-ci.com/dngo13/enpm808x_tdd)
-[![Coverage Status](https://coveralls.io/repos/github/dngo13/enpm808x_tdd/badge.svg?branch=master)](https://coveralls.io/github/dngo13/enpm808x_tdd?branch=master)
----
+
+[![Build Status](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd.svg?branch=master)](https://app.travis-ci.com/Ykulkarni-ops/enpm808x_tdd)
+[![Coverage Status](https://coveralls.io/repos/github/Ykulkarni-ops/enpm808x_tdd/badge.svg?branch=master)](https://coveralls.io/github/Ykulkarni-ops/enpm808x_tdd?branch=master)
+=======
+
 
 ## Authors
 ```
@@ -27,6 +27,15 @@ A Test-Driven Development assignment C++ project for a PID controller with:
 - googletest
 - Travis CI
 - Coveralls
+
+## To do instructions
+
+- The implementation of the part 2 has been completed and the unit test cases have been verified successfully. 
+- Extra test case was added to ensure the code coverage.
+- C++ Google style guide is verified through cpplint and cppcheck. 
+- Doxygen style has been followed for commenting. 
+- Unit test cases and code coverage has been verified using Travis-ci and Coveralls.io
+
 
 ## Standard install via command-line
 ```
@@ -142,3 +151,4 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 - Git
 
     It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
+
