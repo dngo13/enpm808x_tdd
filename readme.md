@@ -22,12 +22,21 @@ Simple starter C++ project with:
 ```
 1. Designed UML and activity diagram
 
-2. Declared class and stub method in include/pid_lib.hpp
+2. Declared class and stub method in include/pid_lib.hpp and app/pid.cpp
 
 3. Created and verified test cases in test/test.cpp
 
-4. Verified commenting and style guidelines.
+4. Verified fail tests in travis and also locally.
+
+5. Verified commenting and style guidelines.
+
+6. Cmakefiles for code coverage were edited and verified.
 ```
+## Things discussed among pairs (notes, to-do)
+- Changes in the test file need to be done.
+- Private variables need to be added in the UML.
+- Structure of the code was verified.
+- Code coverage was discussed.
 ## Things to be done in part 2
 ```
 1. Run test cases:
