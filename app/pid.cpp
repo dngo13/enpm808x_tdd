@@ -53,15 +53,7 @@ double PID::compute(double tar_setpnt, double act_vel) {
      cout << "Target setpoint: " << tar_setpnt;
      cout << " and actual velocity: " << act_vel << endl;
      /// declaration of variable current error ///
-     double current_error = 0.0;
-
-     /**
-      * Loop to find the absolute value of the current error
-      */
-
-     
-     current_error = tar_setpnt - act_vel;
-     
+     double current_error = tar_setpnt - act_vel;
      /// Calculation of proportional component ///
      double proportional = kp_ * current_error;
      /// Calculation of Integral component ///
