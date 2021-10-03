@@ -27,23 +27,23 @@
  */
 class ControllerPID {
  public:
-   double computeVelocity(double set_point, double current_velocity);
-   double returnSamplingTime(void);
+    double computeVelocity(double set_point, double current_velocity);
+    double returnSamplingTime(void);
     /**
      * @brief Construct a new PID object
      */
-   ControllerPID(double k_p_,double k_i_,double k_d_) {
-    // Initialize K_p, K_i, k_d
-    k_p = k_p_;
-    k_i = k_i_;
-    k_d_ = k_d_;
-    sampling_time = 1.0;
-    cur_error = 0;
-    prev_error = 0;
-    new_velocity = 0;
-    total_D_error = 0;
-    total_I_error = 0;
-   }
+    ControllerPID(double k_p_, double k_i_, double k_d_) {
+        // Initialize K_p, K_i, k_d
+        k_p = k_p_;
+        k_i = k_i_;
+        k_d_ = k_d_;
+        sampling_time = 1.0;
+        cur_error = 0;
+        prev_error = 0;
+        new_velocity = 0;
+        total_D_error = 0;
+        total_I_error = 0;
+    }
 
  private:
         // Initializing the gain values, sampling time and PID errors
@@ -56,6 +56,5 @@ class ControllerPID {
         double new_velocity;
         double total_D_error;
         double total_I_error;
-
 };
 // #endif  // INCLUDE_PID_LIB_HPP_
