@@ -37,6 +37,7 @@ double ControllerPID::computeVelocity(double set_point,
     total_I_error = total_I_error + cur_error*sampling_time;
     total_D_error = (cur_error - prev_error)/sampling_time;
     new_velocity = k_p*cur_error +  k_i*total_I_error + k_d*total_D_error;
+    prev_error = cur_error;
     return new_velocity;
 }
 
