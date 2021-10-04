@@ -21,7 +21,8 @@ using std :: cin;
 int main() {
     // Initialize local pid gain variables
     double pid_var[3] = {0}, sp = 0, cv = 0;
-    cout << "Enter PID values(Kp, Ki, Kd), setpoint and current velocity : " << "\n";
+    cout << "Enter PID values(Kp, Ki, Kd), setpoint and current velocity : "
+    << "\n";
     // Take user input for kd, ki, kd values, target and current velocity
     cin >> pid_var[0] >> pid_var[1] >> pid_var[2] >> sp >> cv;
     // Create instance for ControllerPID class
