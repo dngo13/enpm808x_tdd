@@ -1,5 +1,5 @@
-// #ifndef INCLUDE_PID_LIB_HPP_
-// #define INCLUDE_PID_LIB_HPP_
+#ifndef INCLUDE_PID_LIB_HPP_
+#define INCLUDE_PID_LIB_HPP_
 
 /**
  * Copyright (C) 2021 by Aditi Ramadwar
@@ -27,24 +27,12 @@
  */
 class ControllerPID {
  public:
+    // Create method for computing velocity throigh PID
     double computeVelocity(double set_point, double current_velocity);
+    // Return the sampling time value
     double returnSamplingTime(void);
-    /**
-     * @brief Construct a new PID object
-     */
-    ControllerPID(double k_p_, double k_i_, double k_d_) {
-        // Initialize K_p, K_i, k_d
-        k_p = k_p_;
-        k_i = k_i_;
-        k_d = k_d_;
-        sampling_time = 1.0;
-        cur_error = 0;
-        prev_error = 0;
-        new_velocity = 0;
-        total_D_error = 0;
-        total_I_error = 0;
-    }
-
+    // Construct a new PID object
+    ControllerPID(double k_p_, double k_i_, double k_d_);
  private:
         // Initializing the gain values, sampling time and PID errors
         double k_p;
@@ -57,4 +45,4 @@ class ControllerPID {
         double total_D_error;
         double total_I_error;
 };
-// #endif  // INCLUDE_PID_LIB_HPP_
+#endif  // INCLUDE_PID_LIB_HPP_

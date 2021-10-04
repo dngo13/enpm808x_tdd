@@ -14,6 +14,20 @@
 
 #include "pid_lib.hpp"
 
+// Construct a new PID object
+ControllerPID::ControllerPID(double k_p_, double k_i_, double k_d_) {
+        // Initialize K_p, K_i, k_d, sampling time and errors
+        k_p = k_p_;
+        k_i = k_i_;
+        k_d = k_d_;
+        sampling_time = 1.0;
+        cur_error = 0;
+        prev_error = 0;
+        new_velocity = 0;
+        total_D_error = 0;
+        total_I_error = 0;
+    }
+
 /** 
 * @def computeVelocity(double set_point, double current_velocity)
 * 
