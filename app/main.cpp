@@ -3,7 +3,6 @@
 #include <pid_lib.hpp>
 using std :: cout;
 using std :: cin;
-using std :: endl;
 
 /**
  * @def     main.cpp(void)
@@ -20,16 +19,12 @@ using std :: endl;
 int main() {
     // Initialize local pid gain variables
     double pid_var[3] = {0}, sp = 0, cv = 0;
-    cout << "Enter PID values(Kp, Ki, Kd): " << endl;
-    // Take user input for kd, ki, kd values
-    cin >> pid_var[0] >> pid_var[1] >> pid_var[2];
-    cout << "Enter setpoint and current velocity: " << endl;
-    // Take user input for the target and current velocity
-    cin >> sp >> cv;
-
+    cout << "Enter PID values(Kp, Ki, Kd), setpoint and current velocity : " << "\n";
+    // Take user input for kd, ki, kd values, target and current velocity
+    cin >> pid_var[0] >> pid_var[1] >> pid_var[2] >> sp >> cv;
     // Create instance for ControllerPID class
     ControllerPID p(pid_var[0], pid_var[1], pid_var[2]);
     // Print the new velocity
-    cout << "New Velocity: " << p.computeVelocity(sp, cv) << endl;
+    cout << "New Velocity: " << p.computeVelocity(sp, cv) << "\n";
     return 0;
 }
