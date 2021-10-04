@@ -1,6 +1,6 @@
 # PID Controller
 [![Build Status](https://app.travis-ci.com/aditiramadwar/PID_Controller.svg?branch=master)](https://app.travis-ci.com/aditiramadwar/PID_Controller)
-[![Coverage Status](https://coveralls.io/repos/github/ameyakonk/ENPM_808X/badge.svg?branch=master)](https://coveralls.io/github/ameyakonk/ENPM_808X?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/aditiramadwar/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/aditiramadwar/PID_Controller?branch=master)
 ---
 
 ## Overview
