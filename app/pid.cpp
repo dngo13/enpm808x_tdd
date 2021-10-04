@@ -1,73 +1,55 @@
+// Copyright (C) 2021 by Aditi Ramadwar
 /**
- * Copyright pid_cpp [2021] Version 1.0
- * @file pid.cpp
- * @author Part1 1.Diane Ngo (dngo13) (driver) 2.Ameya Konkar (Navigator)
- * @author part2 1.Yash Kulkarni (driver) 2.Aditi Ramadwar (Navigator)
- *
- * @brief PID Class Source file
- *
- * @section DESCRIPTION
- *
- * This source file contains the implementation of the PID controller.
- */
+* @file    pid.cpp
+* @author  Part 1 : Aditi Ramadwar (Driver) , Yash Kulkarni (Navigator)
+* @date    10/03/2021
+* @version 1.0
+*
+* @brief   PID methods descriptions
+*
+* @section DESCRIPTION
+*
+* This is a file that contains all the methods for ControllerPID class
+*/
 
-/// Header files ///
-#include <iostream>
-#include <pid.hpp>
+#include "pid_lib.hpp"
 
-/// Standard Namespace Declaration ///
-using std::cout;
-using std::endl;
+/** 
+* @def computeVelocity(double set_point, double current_velocity)
+* 
+* @brief
+* This method computes the new velocity using current and reference velocities as inputs
+* This is stub implementation of the method computeVelocity which returns a constant value.
+* To do by part 2: 
+* We need to add the PID computations inside of this method in order for the test cases to pass.
+* 
+* @param1 set_point         This is the target/desired velocity which needs to be achieved.
+*                           This parameter will be taken from the user as input.
+* 
+* @param2 current_velocity  This is the current/actual velocity.
+* 
+* @return new_velocity
+*/
 
-/**
- * @brief Constructor and Destructor
- */
-
-
-PID::PID(double kp, double ki, double kd, double ts) {
-  setGains(kp, ki, kd, ts);
+double ControllerPID::computeVelocity(double set_point,
+    double current_velocity) {
+    cur_error = (set_point - current_velocity);
+    total_I_error = total_I_error + cur_error*sampling_time;
+    total_D_error = (cur_error - prev_error)/sampling_time;
+    new_velocity = k_p*cur_error +  k_i*total_I_error + k_d*total_D_error;
+    prev_error = cur_error;
+    return new_velocity;
 }
 
-
-
-/**
- * @brief Function to set the gains for PID controller
- */
-
-int PID::setGains(double kp, double ki, double kd, double ts) {
-    kp_ = kp;
-    ki_ = ki;
-    kd_ = kd;
-    ts_ = ts;
-    return 0;
+/** 
+* @def returnSamplingTime(void)
+* 
+* @brief 
+* This method returns the value of sampling_time that is used in the computation
+* of new_velocity
+* 
+* @return sampling_time
+*/
+double ControllerPID::returnSamplingTime(void) {
+    return sampling_time;
 }
-
-   /**
-   * @brief Calulate new velocity given a setpoint and actual velocity
-   * @param1 tar_setpnt Desired Velocity
-   * @param2 act_vel Actual Velocity
-   * @return new_vel
-   */
-
-double PID::compute(double tar_setpnt, double act_vel) {
-     cout << "Target setpoint: " << tar_setpnt;
-     cout << " and actual velocity: " << act_vel << endl;
-     /// declaration of variable current error ///
-     /// Calculate the current error ///
-     current_error = tar_setpnt - act_vel;
-     /// Calculation of proportional component ///
-     proportional = kp_ * current_error;
-     /// Calculation of Integral component ///
-     integral_error = (current_error) * ts_;
-     integral = ki_ * integral_error;
-     /// Calculation of Derivative component ///
-     derivative = kd_ * (current_error /ts_);
-     /// Calculation of New velocity ///
-     new_vel = proportional + integral + derivative;
-     /// Returns the value of velocity ///
-     return new_vel;
-  }
-
-PID::~PID() {}
-
-

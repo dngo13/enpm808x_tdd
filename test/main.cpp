@@ -1,21 +1,20 @@
 /**
- * Copyright main_cpp [2021] Version 1.0
- * @file main.cpp
- * @author Part1 1.Diane Ngo (dngo13) (driver) 2.Ameya Konkar (Navigator)
- * @author part2 1.Yash Kulkarni (driver) 2.Aditi Ramadwar (Navigator)
- * @brief Main fileto run test cases defined in
- * test.cpp
- */
+* Copyright (C) 2021 by Aditi Ramadwar
+* @file    main.cpp
+* @author  Part 1 : Aditi Ramadwar (Driver) , Yash Kulkarni (Navigator)
+* @date    10/01/2021
+* @version 1.0
+*
+* @brief   execute all test cases
+*
+* @section DESCRIPTION
+* Runs all test cases defined in test.cpp
+*/
 
-/// Header files ///
+// Header files
 #include <gtest/gtest.h>
 
-/**
- * @fn int main(int, char**)
- * @brief Runs all the test cases specified in
- * test.cpp
- */
-
+// Run all test cases defined in test.cpp
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();

@@ -1,1 +1,0 @@
-cppcheck: No C or C++ source files found.

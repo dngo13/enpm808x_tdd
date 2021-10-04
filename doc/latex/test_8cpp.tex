@@ -1,0 +1,82 @@
+\hypertarget{test_8cpp}{}\section{test/test.cpp File Reference}
+\label{test_8cpp}\index{test/test.\+cpp@{test/test.\+cpp}}
+
+
+Test cases.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}pid\+\_\+lib.\+hpp\char`\"{}}\newline
+Include dependency graph for test.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{test_8cpp_ab97b48499f71d86a2832fee3e359f578}{T\+E\+ST} (\hyperlink{class_controller_p_i_d}{Controller\+P\+ID}, get\+\_\+pid\+\_\+output1)
+\begin{DoxyCompactList}\small\item\em \+: Tests the compute method of the class by returning a double value, should pass after correct changes in the compute\+Velocity method. set\+\_\+point = 8.\+0, current\+\_\+velocity = 4.\+0, \mbox{[}k\+\_\+p, k\+\_\+i, k\+\_\+d, sampling\+\_\+time\mbox{]} = \mbox{[}1.\+2, 0.\+4, 0.\+2, 1\mbox{]} expected return value = 7.\+2 \end{DoxyCompactList}\item 
+\hyperlink{test_8cpp_a1a997a5bf51015e092b8d2fad4ca42b4}{T\+E\+ST} (\hyperlink{class_controller_p_i_d}{Controller\+P\+ID}, get\+\_\+pid\+\_\+output2)
+\begin{DoxyCompactList}\small\item\em \+: Tests the compute method of the class by returning a double value, should pass after correct changes in the compute\+Velocity method. set\+\_\+point = 5.\+0, current\+\_\+velocity = 3.\+0, \mbox{[}k\+\_\+p, k\+\_\+i, k\+\_\+d, sampling\+\_\+time\mbox{]} = \mbox{[}1.\+2, 0.\+4, 0.\+2, 1\mbox{]} expected return value = 3.\+2 \end{DoxyCompactList}\item 
+\hyperlink{test_8cpp_adb77cf9041570e25440eb88b8faeba76}{T\+E\+ST} (\hyperlink{class_controller_p_i_d}{Controller\+P\+ID}, get\+\_\+sampling\+\_\+time)
+\begin{DoxyCompactList}\small\item\em \+: Tests the correct initialization of sampling\+\_\+time should pass expected return value = 1.\+0 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Test cases. 
+
+Copyright (C) 2021 by Aditi Ramadwar
+
+\begin{DoxyAuthor}{Author}
+Part 1 \+: Aditi Ramadwar (Driver) , Yash Kulkarni (Navigator) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+9/30/2021 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\hypertarget{test_8cpp_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{test_8cpp_DESCRIPTION}
+This is a test for \hyperlink{class_controller_p_i_d}{Controller\+P\+ID} class and its methods.
+
+Test cases\+:
+
+Test case 1 tests the compute method by returning a double value which is pre-\/calculated. Ideally, after the changes are done in the compute\+Velocity method, this test should pass.
+
+Test case 2 tests the correct initialization of sampling\+\_\+time. This test passes even before doing any changes. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{test_8cpp_ab97b48499f71d86a2832fee3e359f578}\label{test_8cpp_ab97b48499f71d86a2832fee3e359f578}} 
+\index{test.\+cpp@{test.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test.\+cpp@{test.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{\hyperlink{class_controller_p_i_d}{Controller\+P\+ID}}]{,  }\item[{get\+\_\+pid\+\_\+output1}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Tests the compute method of the class by returning a double value, should pass after correct changes in the compute\+Velocity method. set\+\_\+point = 8.\+0, current\+\_\+velocity = 4.\+0, \mbox{[}k\+\_\+p, k\+\_\+i, k\+\_\+d, sampling\+\_\+time\mbox{]} = \mbox{[}1.\+2, 0.\+4, 0.\+2, 1\mbox{]} expected return value = 7.\+2 
+
+\mbox{\Hypertarget{test_8cpp_a1a997a5bf51015e092b8d2fad4ca42b4}\label{test_8cpp_a1a997a5bf51015e092b8d2fad4ca42b4}} 
+\index{test.\+cpp@{test.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test.\+cpp@{test.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{\hyperlink{class_controller_p_i_d}{Controller\+P\+ID}}]{,  }\item[{get\+\_\+pid\+\_\+output2}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Tests the compute method of the class by returning a double value, should pass after correct changes in the compute\+Velocity method. set\+\_\+point = 5.\+0, current\+\_\+velocity = 3.\+0, \mbox{[}k\+\_\+p, k\+\_\+i, k\+\_\+d, sampling\+\_\+time\mbox{]} = \mbox{[}1.\+2, 0.\+4, 0.\+2, 1\mbox{]} expected return value = 3.\+2 
+
+\mbox{\Hypertarget{test_8cpp_adb77cf9041570e25440eb88b8faeba76}\label{test_8cpp_adb77cf9041570e25440eb88b8faeba76}} 
+\index{test.\+cpp@{test.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!test.\+cpp@{test.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{\hyperlink{class_controller_p_i_d}{Controller\+P\+ID}}]{,  }\item[{get\+\_\+sampling\+\_\+time}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Tests the correct initialization of sampling\+\_\+time should pass expected return value = 1.\+0 
+

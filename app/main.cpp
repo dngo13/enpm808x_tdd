@@ -1,32 +1,13 @@
-/**
- * Copyright Main [2021] Version 1.0 
- * @file main.cpp
- * @author Part1 1.Diane Ngo (dngo13) (driver) 2.Ameya Konkar (Navigator)
- * @author part2 1.Yash Kulkarni (driver) 2.Aditi Ramadwar (Navigator)
- *
- * @brief Main file
- */
-
-/// Header files ///
+// Copyright (C) 2021 by Aditi Ramadwar
 #include <iostream>
-#include "pid.hpp"
-
-/// Standard Namespace Declaration ///
-using std::cout;
-using std::endl;
-
-/**
- * @fn int main()
- * @brief Function gives an output of new velocity
- * @return 0
- */
-
+#include <pid_lib.hpp>
+using std :: cout;
+using std :: cin;
 int main() {
-    /// Object pid created using PID class ///
-    PID pid(1.0, 1.0, 1.0, 1.0);
-    /// Calculation of new_vel for given set point and actual velocity ///
-    double new_vel = pid.compute(0.9, 1.5);
-    /// print new velocity ///
-    cout << "The new velocity is: " << new_vel << endl;
+    double pid_var[3] = {0}, sp = 0, cv = 0;                  
+    cout << "Enter PID values, setpoint and current velocity";
+    cin >> pid_var[0] >> pid_var[1] >> pid_var[2] >> sp >> cv ;         // Enter kd, ki, kd values
+    ControllerPID p(pid_var[0] ,pid_var[1], pid_var[2]);                // Create instance for ControllerPID class
+    cout << p.computeVelocity(sp, cv);
     return 0;
 }

@@ -1,0 +1,138 @@
+\hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{}\section{testing\+:\+:internal\+:\+:When\+Sorted\+By\+Matcher$<$ Comparator, Container\+Matcher $>$\+:\+:Impl$<$ Lhs\+Container $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher$<$ Comparator, Container\+Matcher $>$\+::\+Impl$<$ Lhs\+Container $>$@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher$<$ Comparator, Container\+Matcher $>$\+::\+Impl$<$ Lhs\+Container $>$}}
+
+
+{\ttfamily \#include $<$gmock-\/matchers.\+h$>$}
+
+
+
+Inheritance diagram for testing\+:\+:internal\+:\+:When\+Sorted\+By\+Matcher$<$ Comparator, Container\+Matcher $>$\+:\+:Impl$<$ Lhs\+Container $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+:\+:internal\+:\+:When\+Sorted\+By\+Matcher$<$ Comparator, Container\+Matcher $>$\+:\+:Impl$<$ Lhs\+Container $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view}{internal\+::\+Stl\+Container\+View}$<$ \hyperlink{gtest-internal_8h_a874567b176266188fabfffb8393267ce}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+}(Lhs\+Container)$>$ \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a4c84fddfe1bf967a73e5dae1940db427}{Lhs\+View}
+\item 
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a2b2c63a6dcdbfe63fb0ee121ebf463ba}{Lhs\+View\+::type} \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a2cb1a8d85ca2c376b6abdbcb00d84759}{Lhs\+Stl\+Container}
+\item 
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a9cd4f6ed689b3938cdb7b3c4cbf1b36b}{Lhs\+View\+::const\+\_\+reference} \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_ab5e53a762bb213ccf84299b31c825b58}{Lhs\+Stl\+Container\+Reference}
+\item 
+typedef \hyperlink{structtesting_1_1internal_1_1_remove_const_from_key}{Remove\+Const\+From\+Key}$<$ typename Lhs\+Stl\+Container\+::value\+\_\+type $>$\+::type \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a93044f4ba53373fcfc424132b5e6c462}{Lhs\+Value}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a63235e98dec5478b7ff9d06f6babc716}{Impl} (const Comparator \&comparator, const Container\+Matcher \&matcher)
+\item 
+virtual void \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a33f7b8bdce4adb02618e90ac2ec949f9}{Describe\+To} (\+::std\+::ostream $\ast$os) const
+\item 
+virtual void \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a0a59f77fdbb88a6326e5aba671f2aa3e}{Describe\+Negation\+To} (\+::std\+::ostream $\ast$os) const
+\item 
+virtual bool \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a9d8f57c729df8c041f2fd7febbc950da}{Match\+And\+Explain} (Lhs\+Container lhs, \hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$listener) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a2cb1a8d85ca2c376b6abdbcb00d84759}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a2cb1a8d85ca2c376b6abdbcb00d84759}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Lhs\+Stl\+Container@{Lhs\+Stl\+Container}}
+\index{Lhs\+Stl\+Container@{Lhs\+Stl\+Container}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Lhs\+Stl\+Container}{LhsStlContainer}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a2b2c63a6dcdbfe63fb0ee121ebf463ba}{Lhs\+View\+::type} \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a2cb1a8d85ca2c376b6abdbcb00d84759}{Lhs\+Stl\+Container}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_ab5e53a762bb213ccf84299b31c825b58}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_ab5e53a762bb213ccf84299b31c825b58}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Lhs\+Stl\+Container\+Reference@{Lhs\+Stl\+Container\+Reference}}
+\index{Lhs\+Stl\+Container\+Reference@{Lhs\+Stl\+Container\+Reference}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Lhs\+Stl\+Container\+Reference}{LhsStlContainerReference}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a9cd4f6ed689b3938cdb7b3c4cbf1b36b}{Lhs\+View\+::const\+\_\+reference} \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_ab5e53a762bb213ccf84299b31c825b58}{Lhs\+Stl\+Container\+Reference}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a93044f4ba53373fcfc424132b5e6c462}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a93044f4ba53373fcfc424132b5e6c462}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Lhs\+Value@{Lhs\+Value}}
+\index{Lhs\+Value@{Lhs\+Value}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Lhs\+Value}{LhsValue}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+typedef \hyperlink{structtesting_1_1internal_1_1_remove_const_from_key}{Remove\+Const\+From\+Key}$<$ typename Lhs\+Stl\+Container\+::value\+\_\+type$>$\+::type \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a93044f4ba53373fcfc424132b5e6c462}{Lhs\+Value}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a4c84fddfe1bf967a73e5dae1940db427}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a4c84fddfe1bf967a73e5dae1940db427}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Lhs\+View@{Lhs\+View}}
+\index{Lhs\+View@{Lhs\+View}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Lhs\+View}{LhsView}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view}{internal\+::\+Stl\+Container\+View}$<$ \hyperlink{gtest-internal_8h_a874567b176266188fabfffb8393267ce}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+}(Lhs\+Container)$>$ \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a4c84fddfe1bf967a73e5dae1940db427}{Lhs\+View}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a63235e98dec5478b7ff9d06f6babc716}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a63235e98dec5478b7ff9d06f6babc716}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Impl@{Impl}}
+\index{Impl@{Impl}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Impl()}{Impl()}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl} (\begin{DoxyParamCaption}\item[{const Comparator \&}]{comparator,  }\item[{const Container\+Matcher \&}]{matcher }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a0a59f77fdbb88a6326e5aba671f2aa3e}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a0a59f77fdbb88a6326e5aba671f2aa3e}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Describe\+Negation\+To@{Describe\+Negation\+To}}
+\index{Describe\+Negation\+To@{Describe\+Negation\+To}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Describe\+Negation\+To()}{DescribeNegationTo()}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+virtual void \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::Describe\+Negation\+To (\begin{DoxyParamCaption}\item[{\+::std\+::ostream $\ast$}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classtesting_1_1_matcher_describer_interface_a2071afbc47097c4d1c0064275af34db0}{testing\+::\+Matcher\+Describer\+Interface}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a33f7b8bdce4adb02618e90ac2ec949f9}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a33f7b8bdce4adb02618e90ac2ec949f9}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Describe\+To@{Describe\+To}}
+\index{Describe\+To@{Describe\+To}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Describe\+To()}{DescribeTo()}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+virtual void \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::Describe\+To (\begin{DoxyParamCaption}\item[{\+::std\+::ostream $\ast$}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1_matcher_describer_interface_ad9f861588bd969b6e3e717f13bb94e7b}{testing\+::\+Matcher\+Describer\+Interface}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a9d8f57c729df8c041f2fd7febbc950da}\label{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl_a9d8f57c729df8c041f2fd7febbc950da}} 
+\index{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}!Match\+And\+Explain@{Match\+And\+Explain}}
+\index{Match\+And\+Explain@{Match\+And\+Explain}!testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl@{testing\+::internal\+::\+When\+Sorted\+By\+Matcher\+::\+Impl}}
+\subsubsection{\texorpdfstring{Match\+And\+Explain()}{MatchAndExplain()}}
+{\footnotesize\ttfamily template$<$typename Comparator, typename Container\+Matcher$>$ \\
+template$<$typename Lhs\+Container $>$ \\
+virtual bool \hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher}{testing\+::internal\+::\+When\+Sorted\+By\+Matcher}$<$ Comparator, Container\+Matcher $>$\+::\hyperlink{classtesting_1_1internal_1_1_when_sorted_by_matcher_1_1_impl}{Impl}$<$ Lhs\+Container $>$\+::Match\+And\+Explain (\begin{DoxyParamCaption}\item[{Lhs\+Container}]{lhs,  }\item[{\hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$}]{listener }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1_matcher_interface_a296b43607cd99d60365f0e6a762777cf}{testing\+::\+Matcher\+Interface$<$ Lhs\+Container $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/googletest/googlemock/include/gmock/\hyperlink{gmock-matchers_8h}{gmock-\/matchers.\+h}\end{DoxyCompactItemize}

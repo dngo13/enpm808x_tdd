@@ -1,0 +1,90 @@
+\hypertarget{classtesting_1_1internal_1_1_container_eq_matcher}{}\section{testing\+:\+:internal\+:\+:Container\+Eq\+Matcher$<$ Container $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1_container_eq_matcher}\index{testing\+::internal\+::\+Container\+Eq\+Matcher$<$ Container $>$@{testing\+::internal\+::\+Container\+Eq\+Matcher$<$ Container $>$}}
+
+
+{\ttfamily \#include $<$gmock-\/matchers.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view}{internal\+::\+Stl\+Container\+View}$<$ Container $>$ \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_a1565779cdc3d617fcdc8293f9b53c2a6}{View}
+\item 
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a2b2c63a6dcdbfe63fb0ee121ebf463ba}{View\+::type} \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_a8352d0190c372578d9a9a8457e0810db}{Stl\+Container}
+\item 
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a9cd4f6ed689b3938cdb7b3c4cbf1b36b}{View\+::const\+\_\+reference} \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_aaaeaacf0c557fe701a83e108d47edb23}{Stl\+Container\+Reference}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_ad9a4c224c92176d57a865191f419802f}{Container\+Eq\+Matcher} (const Container \&expected)
+\item 
+void \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_a28ace6da475d05134916eb50e54baf1e}{Describe\+To} (\+::std\+::ostream $\ast$os) const
+\item 
+void \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_a3dc9e61b6aff65039325138dccccb8ec}{Describe\+Negation\+To} (\+::std\+::ostream $\ast$os) const
+\item 
+{\footnotesize template$<$typename Lhs\+Container $>$ }\\bool \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_a348c6139776dd7d713d100e406ee38f4}{Match\+And\+Explain} (const Lhs\+Container \&lhs, \hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$listener) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_container_eq_matcher_a8352d0190c372578d9a9a8457e0810db}\label{classtesting_1_1internal_1_1_container_eq_matcher_a8352d0190c372578d9a9a8457e0810db}} 
+\index{testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}!Stl\+Container@{Stl\+Container}}
+\index{Stl\+Container@{Stl\+Container}!testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}}
+\subsubsection{\texorpdfstring{Stl\+Container}{StlContainer}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a2b2c63a6dcdbfe63fb0ee121ebf463ba}{View\+::type} \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{testing\+::internal\+::\+Container\+Eq\+Matcher}$<$ Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_a8352d0190c372578d9a9a8457e0810db}{Stl\+Container}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_container_eq_matcher_aaaeaacf0c557fe701a83e108d47edb23}\label{classtesting_1_1internal_1_1_container_eq_matcher_aaaeaacf0c557fe701a83e108d47edb23}} 
+\index{testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}!Stl\+Container\+Reference@{Stl\+Container\+Reference}}
+\index{Stl\+Container\+Reference@{Stl\+Container\+Reference}!testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}}
+\subsubsection{\texorpdfstring{Stl\+Container\+Reference}{StlContainerReference}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view_a9cd4f6ed689b3938cdb7b3c4cbf1b36b}{View\+::const\+\_\+reference} \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{testing\+::internal\+::\+Container\+Eq\+Matcher}$<$ Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_aaaeaacf0c557fe701a83e108d47edb23}{Stl\+Container\+Reference}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_container_eq_matcher_a1565779cdc3d617fcdc8293f9b53c2a6}\label{classtesting_1_1internal_1_1_container_eq_matcher_a1565779cdc3d617fcdc8293f9b53c2a6}} 
+\index{testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}!View@{View}}
+\index{View@{View}!testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}}
+\subsubsection{\texorpdfstring{View}{View}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+typedef \hyperlink{classtesting_1_1internal_1_1_stl_container_view}{internal\+::\+Stl\+Container\+View}$<$Container$>$ \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{testing\+::internal\+::\+Container\+Eq\+Matcher}$<$ Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_container_eq_matcher_a1565779cdc3d617fcdc8293f9b53c2a6}{View}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_container_eq_matcher_ad9a4c224c92176d57a865191f419802f}\label{classtesting_1_1internal_1_1_container_eq_matcher_ad9a4c224c92176d57a865191f419802f}} 
+\index{testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}!Container\+Eq\+Matcher@{Container\+Eq\+Matcher}}
+\index{Container\+Eq\+Matcher@{Container\+Eq\+Matcher}!testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}}
+\subsubsection{\texorpdfstring{Container\+Eq\+Matcher()}{ContainerEqMatcher()}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+\hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{testing\+::internal\+::\+Container\+Eq\+Matcher}$<$ Container $>$\+::\hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{Container\+Eq\+Matcher} (\begin{DoxyParamCaption}\item[{const Container \&}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_container_eq_matcher_a3dc9e61b6aff65039325138dccccb8ec}\label{classtesting_1_1internal_1_1_container_eq_matcher_a3dc9e61b6aff65039325138dccccb8ec}} 
+\index{testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}!Describe\+Negation\+To@{Describe\+Negation\+To}}
+\index{Describe\+Negation\+To@{Describe\+Negation\+To}!testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}}
+\subsubsection{\texorpdfstring{Describe\+Negation\+To()}{DescribeNegationTo()}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+void \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{testing\+::internal\+::\+Container\+Eq\+Matcher}$<$ Container $>$\+::Describe\+Negation\+To (\begin{DoxyParamCaption}\item[{\+::std\+::ostream $\ast$}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_container_eq_matcher_a28ace6da475d05134916eb50e54baf1e}\label{classtesting_1_1internal_1_1_container_eq_matcher_a28ace6da475d05134916eb50e54baf1e}} 
+\index{testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}!Describe\+To@{Describe\+To}}
+\index{Describe\+To@{Describe\+To}!testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}}
+\subsubsection{\texorpdfstring{Describe\+To()}{DescribeTo()}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+void \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{testing\+::internal\+::\+Container\+Eq\+Matcher}$<$ Container $>$\+::Describe\+To (\begin{DoxyParamCaption}\item[{\+::std\+::ostream $\ast$}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_container_eq_matcher_a348c6139776dd7d713d100e406ee38f4}\label{classtesting_1_1internal_1_1_container_eq_matcher_a348c6139776dd7d713d100e406ee38f4}} 
+\index{testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}!Match\+And\+Explain@{Match\+And\+Explain}}
+\index{Match\+And\+Explain@{Match\+And\+Explain}!testing\+::internal\+::\+Container\+Eq\+Matcher@{testing\+::internal\+::\+Container\+Eq\+Matcher}}
+\subsubsection{\texorpdfstring{Match\+And\+Explain()}{MatchAndExplain()}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+template$<$typename Lhs\+Container $>$ \\
+bool \hyperlink{classtesting_1_1internal_1_1_container_eq_matcher}{testing\+::internal\+::\+Container\+Eq\+Matcher}$<$ Container $>$\+::Match\+And\+Explain (\begin{DoxyParamCaption}\item[{const Lhs\+Container \&}]{lhs,  }\item[{\hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$}]{listener }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/googletest/googlemock/include/gmock/\hyperlink{gmock-matchers_8h}{gmock-\/matchers.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{class_controller_p_i_d}{}\section{Controller\+P\+ID Class Reference}
+\label{class_controller_p_i_d}\index{Controller\+P\+ID@{Controller\+P\+ID}}
+
+
+P\+ID Controller Class, initialization of the gain values.  
+
+
+
+
+{\ttfamily \#include $<$pid\+\_\+lib.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_controller_p_i_d_a65bb68a133b87f5b4bd78c22c48c8b68}{compute\+Velocity} (double set\+\_\+point, double current\+\_\+velocity)
+\item 
+double \hyperlink{class_controller_p_i_d_ab787e05af656c81fdc02fa4311a4cc7d}{return\+Sampling\+Time} (void)
+\item 
+\hyperlink{class_controller_p_i_d_a16e8aed0cbf56add9eaf137b89acd22b}{Controller\+P\+ID} (double k\+\_\+p\+\_\+, double k\+\_\+i\+\_\+, double k\+\_\+d\+\_\+)
+\begin{DoxyCompactList}\small\item\em Construct a new P\+ID object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+P\+ID Controller Class, initialization of the gain values. 
+
+k\+\_\+p This is the proportional gain constant, user input  k\+\_\+d This is the derivative gain constant, user input  k\+\_\+i This is the integral gain constant, user input  sampling\+\_\+time 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_controller_p_i_d_a16e8aed0cbf56add9eaf137b89acd22b}\label{class_controller_p_i_d_a16e8aed0cbf56add9eaf137b89acd22b}} 
+\index{Controller\+P\+ID@{Controller\+P\+ID}!Controller\+P\+ID@{Controller\+P\+ID}}
+\index{Controller\+P\+ID@{Controller\+P\+ID}!Controller\+P\+ID@{Controller\+P\+ID}}
+\subsubsection{\texorpdfstring{Controller\+P\+I\+D()}{ControllerPID()}}
+{\footnotesize\ttfamily Controller\+P\+I\+D\+::\+Controller\+P\+ID (\begin{DoxyParamCaption}\item[{double}]{k\+\_\+p\+\_\+,  }\item[{double}]{k\+\_\+i\+\_\+,  }\item[{double}]{k\+\_\+d\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new P\+ID object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_controller_p_i_d_a65bb68a133b87f5b4bd78c22c48c8b68}\label{class_controller_p_i_d_a65bb68a133b87f5b4bd78c22c48c8b68}} 
+\index{Controller\+P\+ID@{Controller\+P\+ID}!compute\+Velocity@{compute\+Velocity}}
+\index{compute\+Velocity@{compute\+Velocity}!Controller\+P\+ID@{Controller\+P\+ID}}
+\subsubsection{\texorpdfstring{compute\+Velocity()}{computeVelocity()}}
+{\footnotesize\ttfamily double Controller\+P\+I\+D\+::compute\+Velocity (\begin{DoxyParamCaption}\item[{double}]{set\+\_\+point,  }\item[{double}]{current\+\_\+velocity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_controller_p_i_d_ab787e05af656c81fdc02fa4311a4cc7d}\label{class_controller_p_i_d_ab787e05af656c81fdc02fa4311a4cc7d}} 
+\index{Controller\+P\+ID@{Controller\+P\+ID}!return\+Sampling\+Time@{return\+Sampling\+Time}}
+\index{return\+Sampling\+Time@{return\+Sampling\+Time}!Controller\+P\+ID@{Controller\+P\+ID}}
+\subsubsection{\texorpdfstring{return\+Sampling\+Time()}{returnSamplingTime()}}
+{\footnotesize\ttfamily double Controller\+P\+I\+D\+::return\+Sampling\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{pid__lib_8hpp}{pid\+\_\+lib.\+hpp}\item 
+app/\hyperlink{pid_8cpp}{pid.\+cpp}\end{DoxyCompactItemize}

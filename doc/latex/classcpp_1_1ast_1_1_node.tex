@@ -1,0 +1,122 @@
+\hypertarget{classcpp_1_1ast_1_1_node}{}\section{cpp.\+ast.\+Node Class Reference}
+\label{classcpp_1_1ast_1_1_node}\index{cpp.\+ast.\+Node@{cpp.\+ast.\+Node}}
+
+
+Inheritance diagram for cpp.\+ast.\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcpp_1_1ast_1_1_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cpp.\+ast.\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classcpp_1_1ast_1_1_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcpp_1_1ast_1_1_node_a2cbd6969346645259afc3be51faae904}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classcpp_1_1ast_1_1_node_a7b2aa97e6a049bb1a93aea48c48f1f44}{start}, \hyperlink{classcpp_1_1ast_1_1_node_a3c5e5246ccf619df28eca02e29d69647}{end})
+\item 
+def \hyperlink{classcpp_1_1ast_1_1_node_ab3eca703a79fb65bc25dfbcb7547c79e}{Is\+Declaration} (self)
+\item 
+def \hyperlink{classcpp_1_1ast_1_1_node_a684ee9a357168e7e07a24fc6812f66e6}{Is\+Definition} (self)
+\item 
+def \hyperlink{classcpp_1_1ast_1_1_node_a313273874ccf578485006d4000128234}{Is\+Exportable} (self)
+\item 
+def \hyperlink{classcpp_1_1ast_1_1_node_a31ae211f954a8c578ef16226df5ac8c8}{Requires} (self, node)
+\item 
+def \hyperlink{classcpp_1_1ast_1_1_node_ab5dfeabcbcd7c1f5feb8522edffb8b4a}{X\+X\+X\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classcpp_1_1ast_1_1_node_ab89915656a60c7b7c752e5baa607c532}{\+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcpp_1_1ast_1_1_node_a7b2aa97e6a049bb1a93aea48c48f1f44}{start}
+\item 
+\hyperlink{classcpp_1_1ast_1_1_node_a3c5e5246ccf619df28eca02e29d69647}{end}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Base AST node.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcpp_1_1ast_1_1_node_a2cbd6969346645259afc3be51faae904}\label{classcpp_1_1ast_1_1_node_a2cbd6969346645259afc3be51faae904}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def cpp.\+ast.\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start,  }\item[{}]{end }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpp_1_1ast_1_1_node_ab89915656a60c7b7c752e5baa607c532}\label{classcpp_1_1ast_1_1_node_ab89915656a60c7b7c752e5baa607c532}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+repr\+\_\+\+\_\+()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily def cpp.\+ast.\+Node.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcpp_1_1ast_1_1_node_ab3eca703a79fb65bc25dfbcb7547c79e}\label{classcpp_1_1ast_1_1_node_ab3eca703a79fb65bc25dfbcb7547c79e}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!Is\+Declaration@{Is\+Declaration}}
+\index{Is\+Declaration@{Is\+Declaration}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{Is\+Declaration()}{IsDeclaration()}}
+{\footnotesize\ttfamily def cpp.\+ast.\+Node.\+Is\+Declaration (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns bool if this node is a declaration.\end{DoxyVerb}
+ \mbox{\Hypertarget{classcpp_1_1ast_1_1_node_a684ee9a357168e7e07a24fc6812f66e6}\label{classcpp_1_1ast_1_1_node_a684ee9a357168e7e07a24fc6812f66e6}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!Is\+Definition@{Is\+Definition}}
+\index{Is\+Definition@{Is\+Definition}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{Is\+Definition()}{IsDefinition()}}
+{\footnotesize\ttfamily def cpp.\+ast.\+Node.\+Is\+Definition (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns bool if this node is a definition.\end{DoxyVerb}
+ \mbox{\Hypertarget{classcpp_1_1ast_1_1_node_a313273874ccf578485006d4000128234}\label{classcpp_1_1ast_1_1_node_a313273874ccf578485006d4000128234}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!Is\+Exportable@{Is\+Exportable}}
+\index{Is\+Exportable@{Is\+Exportable}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{Is\+Exportable()}{IsExportable()}}
+{\footnotesize\ttfamily def cpp.\+ast.\+Node.\+Is\+Exportable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns bool if this node exportable from a header file.\end{DoxyVerb}
+ \mbox{\Hypertarget{classcpp_1_1ast_1_1_node_a31ae211f954a8c578ef16226df5ac8c8}\label{classcpp_1_1ast_1_1_node_a31ae211f954a8c578ef16226df5ac8c8}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!Requires@{Requires}}
+\index{Requires@{Requires}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{Requires()}{Requires()}}
+{\footnotesize\ttfamily def cpp.\+ast.\+Node.\+Requires (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does this AST node require the definition of the node passed in?\end{DoxyVerb}
+ \mbox{\Hypertarget{classcpp_1_1ast_1_1_node_ab5dfeabcbcd7c1f5feb8522edffb8b4a}\label{classcpp_1_1ast_1_1_node_ab5dfeabcbcd7c1f5feb8522edffb8b4a}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!X\+X\+X\+\_\+\+\_\+str\+\_\+\+\_\+@{X\+X\+X\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{X\+X\+X\+\_\+\+\_\+str\+\_\+\+\_\+@{X\+X\+X\+\_\+\+\_\+str\+\_\+\+\_\+}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{X\+X\+X\+\_\+\+\_\+str\+\_\+\+\_\+()}{XXX\_\_str\_\_()}}
+{\footnotesize\ttfamily def cpp.\+ast.\+Node.\+X\+X\+X\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcpp_1_1ast_1_1_node_a3c5e5246ccf619df28eca02e29d69647}\label{classcpp_1_1ast_1_1_node_a3c5e5246ccf619df28eca02e29d69647}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!end@{end}}
+\index{end@{end}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily cpp.\+ast.\+Node.\+end}
+
+\mbox{\Hypertarget{classcpp_1_1ast_1_1_node_a7b2aa97e6a049bb1a93aea48c48f1f44}\label{classcpp_1_1ast_1_1_node_a7b2aa97e6a049bb1a93aea48c48f1f44}} 
+\index{cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}!start@{start}}
+\index{start@{start}!cpp\+::ast\+::\+Node@{cpp\+::ast\+::\+Node}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily cpp.\+ast.\+Node.\+start}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/googletest/googlemock/scripts/generator/cpp/\hyperlink{ast_8py}{ast.\+py}\end{DoxyCompactItemize}

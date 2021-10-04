@@ -1,0 +1,67 @@
+\hypertarget{classtesting_1_1internal_1_1_str_equality_matcher}{}\section{testing\+:\+:internal\+:\+:Str\+Equality\+Matcher$<$ String\+Type $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1_str_equality_matcher}\index{testing\+::internal\+::\+Str\+Equality\+Matcher$<$ String\+Type $>$@{testing\+::internal\+::\+Str\+Equality\+Matcher$<$ String\+Type $>$}}
+
+
+{\ttfamily \#include $<$gmock-\/matchers.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1internal_1_1_str_equality_matcher_a613006d82018b18ef8fded721f70f860}{Str\+Equality\+Matcher} (const String\+Type \&str, bool expect\+\_\+eq, bool case\+\_\+sensitive)
+\item 
+{\footnotesize template$<$typename Char\+Type $>$ }\\bool \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher_a72b8373d619e29ce27ed3ecdc6089b0b}{Match\+And\+Explain} (Char\+Type $\ast$s, \hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$listener) const
+\item 
+{\footnotesize template$<$typename Matchee\+String\+Type $>$ }\\bool \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher_aedb1ac6fc8c15b318dfd8e99927aa2e1}{Match\+And\+Explain} (const Matchee\+String\+Type \&s, \hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$) const
+\item 
+void \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher_a18c05a02da6b1df1c3dbfe4870aaa3c2}{Describe\+To} (\+::std\+::ostream $\ast$os) const
+\item 
+void \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher_af595c0c79e9e550496fe62bc6bbdd4f3}{Describe\+Negation\+To} (\+::std\+::ostream $\ast$os) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_str_equality_matcher_a613006d82018b18ef8fded721f70f860}\label{classtesting_1_1internal_1_1_str_equality_matcher_a613006d82018b18ef8fded721f70f860}} 
+\index{testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}!Str\+Equality\+Matcher@{Str\+Equality\+Matcher}}
+\index{Str\+Equality\+Matcher@{Str\+Equality\+Matcher}!testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}}
+\subsubsection{\texorpdfstring{Str\+Equality\+Matcher()}{StrEqualityMatcher()}}
+{\footnotesize\ttfamily template$<$typename String\+Type $>$ \\
+\hyperlink{classtesting_1_1internal_1_1_str_equality_matcher}{testing\+::internal\+::\+Str\+Equality\+Matcher}$<$ String\+Type $>$\+::\hyperlink{classtesting_1_1internal_1_1_str_equality_matcher}{Str\+Equality\+Matcher} (\begin{DoxyParamCaption}\item[{const String\+Type \&}]{str,  }\item[{bool}]{expect\+\_\+eq,  }\item[{bool}]{case\+\_\+sensitive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_str_equality_matcher_af595c0c79e9e550496fe62bc6bbdd4f3}\label{classtesting_1_1internal_1_1_str_equality_matcher_af595c0c79e9e550496fe62bc6bbdd4f3}} 
+\index{testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}!Describe\+Negation\+To@{Describe\+Negation\+To}}
+\index{Describe\+Negation\+To@{Describe\+Negation\+To}!testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}}
+\subsubsection{\texorpdfstring{Describe\+Negation\+To()}{DescribeNegationTo()}}
+{\footnotesize\ttfamily template$<$typename String\+Type $>$ \\
+void \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher}{testing\+::internal\+::\+Str\+Equality\+Matcher}$<$ String\+Type $>$\+::Describe\+Negation\+To (\begin{DoxyParamCaption}\item[{\+::std\+::ostream $\ast$}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_str_equality_matcher_a18c05a02da6b1df1c3dbfe4870aaa3c2}\label{classtesting_1_1internal_1_1_str_equality_matcher_a18c05a02da6b1df1c3dbfe4870aaa3c2}} 
+\index{testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}!Describe\+To@{Describe\+To}}
+\index{Describe\+To@{Describe\+To}!testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}}
+\subsubsection{\texorpdfstring{Describe\+To()}{DescribeTo()}}
+{\footnotesize\ttfamily template$<$typename String\+Type $>$ \\
+void \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher}{testing\+::internal\+::\+Str\+Equality\+Matcher}$<$ String\+Type $>$\+::Describe\+To (\begin{DoxyParamCaption}\item[{\+::std\+::ostream $\ast$}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_str_equality_matcher_a72b8373d619e29ce27ed3ecdc6089b0b}\label{classtesting_1_1internal_1_1_str_equality_matcher_a72b8373d619e29ce27ed3ecdc6089b0b}} 
+\index{testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}!Match\+And\+Explain@{Match\+And\+Explain}}
+\index{Match\+And\+Explain@{Match\+And\+Explain}!testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}}
+\subsubsection{\texorpdfstring{Match\+And\+Explain()}{MatchAndExplain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename String\+Type $>$ \\
+template$<$typename Char\+Type $>$ \\
+bool \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher}{testing\+::internal\+::\+Str\+Equality\+Matcher}$<$ String\+Type $>$\+::Match\+And\+Explain (\begin{DoxyParamCaption}\item[{Char\+Type $\ast$}]{s,  }\item[{\hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$}]{listener }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_str_equality_matcher_aedb1ac6fc8c15b318dfd8e99927aa2e1}\label{classtesting_1_1internal_1_1_str_equality_matcher_aedb1ac6fc8c15b318dfd8e99927aa2e1}} 
+\index{testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}!Match\+And\+Explain@{Match\+And\+Explain}}
+\index{Match\+And\+Explain@{Match\+And\+Explain}!testing\+::internal\+::\+Str\+Equality\+Matcher@{testing\+::internal\+::\+Str\+Equality\+Matcher}}
+\subsubsection{\texorpdfstring{Match\+And\+Explain()}{MatchAndExplain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename String\+Type $>$ \\
+template$<$typename Matchee\+String\+Type $>$ \\
+bool \hyperlink{classtesting_1_1internal_1_1_str_equality_matcher}{testing\+::internal\+::\+Str\+Equality\+Matcher}$<$ String\+Type $>$\+::Match\+And\+Explain (\begin{DoxyParamCaption}\item[{const Matchee\+String\+Type \&}]{s,  }\item[{\hyperlink{classtesting_1_1_match_result_listener}{Match\+Result\+Listener} $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/googletest/googlemock/include/gmock/\hyperlink{gmock-matchers_8h}{gmock-\/matchers.\+h}\end{DoxyCompactItemize}
