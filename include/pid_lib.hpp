@@ -39,10 +39,7 @@ class ControllerPID {
         double k_d;
         double k_i;
         double sampling_time;
-        double prev_error;
-        double cur_error;
-        double new_velocity;
-        double total_D_error;
-        double total_I_error;
+        double prev_error; // Global variable for initial 0
+        double total_I_error; // Global variable for initial 0
 };
 #endif  // INCLUDE_PID_LIB_HPP_
